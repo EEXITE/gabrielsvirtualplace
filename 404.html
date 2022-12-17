@@ -10,13 +10,13 @@
 <p><b>Sorry mate can't find what you're looking for!</b></p> 
 </center>
 
-<audio id="heartbeat" src="choir.mp3" preload="auto">
+<audio id="heartbeat" src="/choir.mp3" preload="auto">
 	Your browser does not support the <code>audio</code> element.
 </audio>
 
 <div class="buttons">
 <center>
-  <button id="play" class="button"><b>Return to homepage</b></button>
+  <button id="play" class="button"><a href="https://eexite.github.io/gabrielsvirtualplace/" target="_blank"><b>Return to homepage</b></a></button>
   </center>
 </div>
 <br><br><br>
@@ -46,6 +46,10 @@ background-color: #FF0000;
   padding: 14px 40px;
   font-family:serif;
   }
+  a {
+  text-decoration:none;
+  color:white;
+}
 </style>
 <script>
 var playBtn = document.getElementById('play'),
