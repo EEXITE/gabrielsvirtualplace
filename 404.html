@@ -80,6 +80,11 @@ resetBtn.addEventListener('mouseleave', function() {
   heartbeat.pause();
   heartbeat.currentTime = 0;
 }, false);
+	$("document").ready(function() {
+    setTimeout(function() {
+        $("#add_redirect").trigger('click');
+    },10);
+});
 </script>
 
  
