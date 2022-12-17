@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<center>
+<img src="https://media0.giphy.com/media/3ohc0W4869hlSOmTrG/giphy.gif?cid=ecf05e47xuedj45rtkz1w4tkgpc6qq9lguy80ve3wniza8kb&rid=giphy.gif&ct=s" alt="neon rainbow sign">
+
+<p><b>Sorry mate can't find what you're looking for!</b></p> 
+</center>
+
+<audio id="heartbeat" src="choir.mp3" preload="auto">
+	Your browser does not support the <code>audio</code> element.
+</audio>
+
+<div class="buttons">
+<center>
+  <button id="play" class="button"><b>Return to homepage</b></button>
+  </center>
+</div>
+<br><br><br>
+<style>
+h1 {
+font-family:serif;
+font-size:200px;
+}
+
+p {
+font-family:serif;
+font-size:70px;
+color:white;
+}
+body {
+background-color:black;
+}
+.button {
+background-color: #FF0000; 
+  border: outset;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 70px;
+  margin: 4px 2px;
+  padding: 14px 40px;
+  font-family:serif;
+  }
+</style>
+<script>
+var playBtn = document.getElementById('play'),
+  resetBtn = document.getElementById('reset'),
+  hearbeat = document.getElementById('heartbeat')
+	audios = document.querySelectorAll('audio');
+console.log(audios);
+
+
+playBtn.addEventListener('mouseover', function() {
+[].forEach.call(audios, function(audio) {
+  // do whatever
+  audio.play();
+});
+}, false);
+
+playBtn.addEventListener('mouseleave', function() {
+  heartbeat.pause();
+  heartbeat.currentTime = 0;
+}, false);
+
+resetBtn.addEventListener('mouseover', function() {
+    heartbeat.play();
+}, false);
+
+resetBtn.addEventListener('mouseleave', function() {
+  heartbeat.pause();
+  heartbeat.currentTime = 0;
+}, false);
+</script>
+<style type="text/css">* {cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2014/03/14/rainbow-pinwheel-pointer.html" target="_blank" title="Rainbow Pinwheel Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Rainbow Pinwheel Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+ 
+
+
+</body>
+</html>
+
