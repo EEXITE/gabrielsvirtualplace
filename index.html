@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <meta charset="UTF-8">
    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -21,7 +25,7 @@
     
 
     <center>
-    <img src="https://media0.giphy.com/media/3ohc0W4869hlSOmTrG/giphy.gif?cid=ecf05e47xuedj45rtkz1w4tkgpc6qq9lguy80ve3wniza8kb&rid=giphy.gif&ct=s" width="400" alt="rainbow neon sign">
+    <img class="animate__flip" src="https://media0.giphy.com/media/3ohc0W4869hlSOmTrG/giphy.gif?cid=ecf05e47xuedj45rtkz1w4tkgpc6qq9lguy80ve3wniza8kb&rid=giphy.gif&ct=s" width="400" alt="rainbow neon sign">
    <H1 class="logo">GABRIEL'S VIRTUAL PLACE</H1>
     <br>
 
@@ -357,6 +361,23 @@ function topFunction() {
 }
 }
 </style>
+<style>
+.animate__flip {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: flip; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  .logo {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: flipInY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+<style>
+
   </body>
   
   
