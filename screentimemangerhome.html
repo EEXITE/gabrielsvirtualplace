@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>SCREEN TIME MANGER</title>
@@ -10,8 +14,8 @@
 
 
 <center>
-<img src="https://fontmeme.com/permalink/221219/a652f7664810c1be9cc72b2912022e56.png" alt="gacha-life-font" width="1090px" border="0">
-<img src="https://fontmeme.com/permalink/221219/267b98d035f6a2117862bd0f44e9a7b0.png" width="1090px" alt="gacha-life-font" border="0">
+<img src="https://fontmeme.com/permalink/221219/a652f7664810c1be9cc72b2912022e56.png" alt="gacha-life-font" class="Screen" width="1090px" border="0">
+<img src="https://fontmeme.com/permalink/221219/267b98d035f6a2117862bd0f44e9a7b0.png" width="1090px" alt="gacha-life-font" class="Time" border="0">
 </center>
 <iframe width="0" height="0" src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br><br>
@@ -72,6 +76,20 @@ hr {
 width:900px;
 }
 
+.Screen {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.Time {
+ display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
 
 </style>
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
