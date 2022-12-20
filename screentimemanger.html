@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/7.css">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -11,7 +14,7 @@
 <img src="https://fontmeme.com/permalink/221219/a652f7664810c1be9cc72b2912022e56.png" alt="gacha-life-font" class="Screen" width="400px" border="0">
 <br>
 <img src="https://fontmeme.com/permalink/221219/267b98d035f6a2117862bd0f44e9a7b0.png" width="400px" alt="gacha-life-font" class="Time" border="0">
-<p><span style="font-size:22px; font-family: 'Roboto', sans-serif;">Welcome to Screen Time Manger! Let me give you a run down of how this will work. <br> Firstly you will be asked a few questions (anwser them truthfully!)<br>then, you'll get to create you're own list of non-screen activities and<br>
+<p class="Intro"><span style="font-size:22px; font-family: 'Roboto', sans-serif;">Welcome to Screen Time Manger! Let me give you a run down of how this will work. <br> Firstly you will be asked a few questions (anwser them truthfully!)<br>then, you'll get to create you're own list of non-screen activities and<br>
 lastly, you will pick some ideas from the list you just created to do today!</span></p>
 <br><br><br><br>
 <p><span style="font-size:22px; font-family: 'Roboto', sans-serif;">When you use your device what do you do on it? (Multiple choice)</span></p>
@@ -111,10 +114,25 @@ font-family: 'Roboto', sans-serif;
 label {
 font-family: 'Roboto', sans-serif;
 }
+.Screen {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.Time {
+ display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
 
 </style>
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); </style>
 <br>
  <iframe width="0" height="0" src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-8/cur771.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/02/25/windows-7-pointer.html" target="_blank" title="Windows 7 Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Windows 7 Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
 </body>
 </html>
